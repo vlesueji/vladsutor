@@ -89,4 +89,25 @@ legend {
   margin-inline: auto;
 }
 
+.header {
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__button {
+  border-style: solid;
+  height: 2rem;
+  width: fit-content;
+  padding-inline: 2rem;
+}
+
+.nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
