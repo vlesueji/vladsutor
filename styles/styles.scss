@@ -19,6 +19,12 @@
   }
 }
 
+.logo {
+  &__image {
+    max-height: 3rem;
+  }
+}
+
 .nav {
   &__list {
     display: flex;

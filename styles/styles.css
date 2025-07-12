@@ -105,6 +105,10 @@ legend {
   padding-inline: 2rem;
 }
 
+.logo__image {
+  max-height: 3rem;
+}
+
 .nav__list {
   display: flex;
   gap: 2rem;
