@@ -1,4 +1,10 @@
+@use 'variables' as *;
+
 * {
   font-family: "Roboto Light", sans-serif;
   color: var(--main-font-color);
+}
+
+body {
+  background-color: var(--background-color);
 }

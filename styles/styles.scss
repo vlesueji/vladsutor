@@ -7,17 +7,20 @@
 .header {
 //  @include border;
   display: flex;
+  height: 3rem;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-inline: 1rem;
   margin-top: 1rem;
+  background-color: var(--background-block-color);
 
   &__button {
-    border-style: solid;
     height: 2rem;
     width: fit-content;
     padding-inline: 2rem;
+    background-color: var(--button-color);
+    opacity: 0.9;
   }
 }
 

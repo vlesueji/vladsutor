@@ -84,13 +84,20 @@ legend {
   display: block;
 }
 
-root {
+:root {
   --main-font-color: rgb(38, 62, 15);
+  --background-color: #ffffff;
+  --background-block-color: #f6f6f6;
+  --button-color: #ffffff ;
 }
 
 * {
   font-family: "Roboto Light", sans-serif;
   color: var(--main-font-color);
+}
+
+body {
+  background-color: var(--background-color);
 }
 
 .container {
@@ -100,17 +107,20 @@ root {
 
 .header {
   display: flex;
+  height: 3rem;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-inline: 1rem;
   margin-top: 1rem;
+  background-color: var(--background-block-color);
 }
 .header__button {
-  border-style: solid;
   height: 2rem;
   width: fit-content;
   padding-inline: 2rem;
+  background-color: var(--button-color);
+  opacity: 0.9;
 }
 
 .logo__image {
