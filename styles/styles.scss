@@ -14,13 +14,24 @@
   padding-inline: 1rem;
   margin-top: 1rem;
   background-color: var(--background-block-color);
+//  opacity: 0.5;
 
   &__button {
     height: 2rem;
     width: fit-content;
+//    border-style: solid;
+//    border-color: var(--button-color);
     padding-inline: 2rem;
-    background-color: var(--button-color);
-    opacity: 0.9;
+    background-color: var(--background-color);
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+
+    @include hover {
+      opacity: 1;
+      background-color: var(--background-color-active);
+      box-shadow: 0px 0px 10px var(--active-color);
+      text-shadow: 0px 0px 5px var(--active-color);
+    }
   }
 }
 
@@ -34,5 +45,14 @@
   &__list {
     display: flex;
     gap: 2rem;
+  }
+
+  &__item {
+    transition: all 0.2s ease-in-out;
+    @include hover {
+      color: var(--active-text);
+      text-shadow: 1px 1px 3px yellow;
+
+    }
   }
 }

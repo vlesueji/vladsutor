@@ -87,8 +87,11 @@ legend {
 :root {
   --main-font-color: rgb(38, 62, 15);
   --background-color: #ffffff;
+  --background-color-active: rgba(238, 255, 0, 0.28);
   --background-block-color: #f6f6f6;
-  --button-color: #ffffff ;
+  --button-color: #ffffff;
+  --active-color: #eeff00;
+  --active-text: #794c2c;
 }
 
 * {
@@ -119,8 +122,25 @@ body {
   height: 2rem;
   width: fit-content;
   padding-inline: 2rem;
-  background-color: var(--button-color);
-  opacity: 0.9;
+  background-color: var(--background-color);
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+@media (hover: hover) {
+  .header__button:hover {
+    opacity: 1;
+    background-color: var(--background-color-active);
+    box-shadow: 0px 0px 10px var(--active-color);
+    text-shadow: 0px 0px 5px var(--active-color);
+  }
+}
+@media (hover: none) {
+  .header__button:active {
+    opacity: 1;
+    background-color: var(--background-color-active);
+    box-shadow: 0px 0px 10px var(--active-color);
+    text-shadow: 0px 0px 5px var(--active-color);
+  }
 }
 
 .logo__image {
@@ -130,6 +150,21 @@ body {
 .nav__list {
   display: flex;
   gap: 2rem;
+}
+.nav__item {
+  transition: all 0.2s ease-in-out;
+}
+@media (hover: hover) {
+  .nav__item:hover {
+    color: var(--active-text);
+    text-shadow: 1px 1px 3px yellow;
+  }
+}
+@media (hover: none) {
+  .nav__item:active {
+    color: var(--active-text);
+    text-shadow: 1px 1px 3px yellow;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

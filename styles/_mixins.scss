@@ -3,3 +3,17 @@
   border-width: 1px;
   border-color: red;
 }
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+  
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
