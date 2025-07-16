@@ -85,13 +85,13 @@ legend {
 }
 
 :root {
-  --main-font-color: rgb(38, 62, 15);
+  --main-font-color: rgb(211, 218, 191);
   --background-color: #ffffff;
   --background-color-active: rgba(238, 255, 0, 0.28);
-  --background-block-color: #f6f6f6;
-  --button-color: #ffffff;
+  --background-block-color: #000000;
+  --button-color: #2f2c22;
   --active-color: #eeff00;
-  --active-text: #794c2c;
+  --active-text: #ffffff;
 }
 
 * {
@@ -117,12 +117,17 @@ body {
   padding-inline: 1rem;
   margin-top: 1rem;
   background-color: var(--background-block-color);
+  opacity: 0.6;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .header__button {
   height: 2rem;
   width: fit-content;
   padding-inline: 2rem;
-  background-color: var(--background-color);
+  background-color: var(--button-color);
   opacity: 0.8;
   transition: all 0.2s ease-in-out;
 }

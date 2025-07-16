@@ -14,7 +14,12 @@
   padding-inline: 1rem;
   margin-top: 1rem;
   background-color: var(--background-block-color);
-//  opacity: 0.5;
+  opacity: 0.6;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border:	1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6),
+  inset 0 0 10px rgba(255, 255, 255, 0.5);
 
   &__button {
     height: 2rem;
@@ -22,7 +27,7 @@
 //    border-style: solid;
 //    border-color: var(--button-color);
     padding-inline: 2rem;
-    background-color: var(--background-color);
+    background-color: var(--button-color);
     opacity: 0.8;
     transition: all 0.2s ease-in-out;
 
