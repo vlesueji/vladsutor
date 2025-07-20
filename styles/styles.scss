@@ -4,6 +4,16 @@
 @use 'mixins' as *;
 @use 'utils' as *;
 
+.block {
+  background-color: var(--background-block-color);
+  opacity: 0.9;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border:	1px solid rgba(255,255,255,0.7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6),
+  inset 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
 .header {
 //  @include border;
   display: flex;
@@ -13,13 +23,6 @@
   align-items: center;
   padding-inline: 1rem;
   margin-top: 1rem;
-  background-color: var(--background-block-color);
-  opacity: 0.6;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  border:	1px solid rgba(255,255,255,0.6);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6),
-  inset 0 0 5px rgba(255, 255, 255, 0.5);
 
   &__button {
     height: 2rem;
@@ -29,7 +32,6 @@
     padding-inline: 1rem;
     border-radius: 10px;
     background-color: var(--button-color);
-    opacity: 0.8;
     transition: all 0.2s ease-in-out;
 
     @include hover {
