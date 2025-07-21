@@ -99,7 +99,7 @@
     margin-inline: auto;
   }
 
-  &__header {
+  &__title {
     //    text-align: center;
     font-size: 2rem;
     color: var(--main-font-color);
@@ -110,13 +110,29 @@
 
   &__paragraph {
     width: 80%;
-    color: #000000;
+    padding-left: 5rem;
+    color: #eaeaea;
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
   &__image {
     width: 40%;
+  }
+
+}
+
+.advantages {
+  background-color: rgba(0, 0, 0, 0.6);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    color: #eaeaea;
+
+  }
+  &__image {
+    width: 20%;
   }
 
 }

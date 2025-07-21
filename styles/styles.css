@@ -202,7 +202,7 @@ legend {
   width: 60%;
   margin-inline: auto;
 }
-.home__header {
+.home__title {
   font-size: 2rem;
   color: var(--main-font-color);
   font-weight: 500;
@@ -211,12 +211,25 @@ legend {
 }
 .home__paragraph {
   width: 80%;
-  color: #000000;
+  padding-left: 5rem;
+  color: #eaeaea;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 .home__image {
   width: 40%;
+}
+
+.advantages {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.advantages__content {
+  display: flex;
+  justify-content: space-between;
+  color: #eaeaea;
+}
+.advantages__image {
+  width: 20%;
 }
 
 /*# sourceMappingURL=styles.css.map */
